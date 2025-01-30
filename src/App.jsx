@@ -19,6 +19,8 @@ function App() {
         setTransactions([...transactions, modifyData]);
     };
 
+
+
     const onDeleteTransaction = (id) => {
         const newTransactions = transactions.filter((eachTransaction) => eachTransaction.id !== id);
         setTransactions(newTransactions);
